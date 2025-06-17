@@ -40,11 +40,12 @@ p{
     color: red;
     text-align: center;
 }
-.spn{
-    margin: 100px 200px;
-}
+
 .loginName{
     color: rgb(90, 84, 84);
+}
+.spn{
+    margin: 200px 350px ;
 }
 
 @media (max-width: 480px) {
@@ -61,4 +62,7 @@ p{
     .button{
         margin-right: 30px;
     }
+    .spn{
+    margin: 100px 200px;
+}
 }
