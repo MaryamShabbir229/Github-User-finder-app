@@ -1,0 +1,55 @@
+.container{
+
+ width: 50%;
+
+}
+
+.image{
+    border: 2px solid black;
+    border-radius: 300px;
+    text-align: center;
+    
+  /* width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; */
+}
+
+
+
+.input{
+    width: 50%;
+    margin-left: 120px!important;
+    margin-right: 30px;
+}
+p{
+ 
+}
+.icon{
+    margin-right: 10px;
+}
+
+#showdiv > div {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+    
+    .input{
+        width: 100%;
+        margin-left: 20px!important;
+        margin-right: 30px;
+        
+    }
+    .button{
+        margin-right: 30px;
+    }
+}
