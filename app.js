@@ -6,7 +6,11 @@ let showDiv = document.getElementById("showdiv")
 
 let searchUser = async () => {
 try {
-     let API_URL = `https://api.github.com/users/${userInput.value}`;
+
+    showDiv.innerHTML = `<div class="spinner-border text-danger spn" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>`
+let  API_URL = `https://api.github.com/users/${userInput.value}`;
 
     let response = await fetch(API_URL);
 
@@ -25,7 +29,11 @@ try {
 }
 
 let showData = (data) =>{
- showDiv.innerHTML = `<div >
+
+    if(data.status == "404"){
+        showDiv.innerHTML = `<h1 class="error">${data.message}</h1>`
+    }else{
+         showDiv.innerHTML = `<div >
                 <img class="image " width=300 height="300" src="${data.avatar_url}">
                 <h1 class="pname">${data.name}</h1>
                 <h3 class="loginName">${data.login}</h3>
@@ -46,5 +54,7 @@ let showData = (data) =>{
 
 
             </div>`
+    }
+
 }
 

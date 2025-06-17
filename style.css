@@ -36,7 +36,16 @@ p{
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   text-align: center;
 }
-
+.error{
+    color: red;
+    text-align: center;
+}
+.spn{
+    margin: 100px 200px;
+}
+.loginName{
+    color: rgb(90, 84, 84);
+}
 
 @media (max-width: 480px) {
     .container{
